@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-07T13:23:24.100Z",
+    "end": "2021-03-07T13:23:24.495Z",
+    "duration": 395,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c336860f-533f-4d91-af39-c4e835a0dd21",
+      "title": "",
+      "fullFile": "cypress\\integration\\ReadWriteFileSpec.ts",
+      "file": "cypress\\integration\\ReadWriteFileSpec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c5f0e381-1bc2-4efd-b61d-e068a043fb46",
+          "title": "read write file demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "read file using fixture",
+              "fullTitle": "read write file demo read file using fixture",
+              "timedOut": null,
+              "duration": 192,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('example.json')\n    .its('name').should('eq', 'cypress');\ncy.log(this.data.name);\ncy.log(this.data.email);",
+              "err": {},
+              "uuid": "3c423be3-57a4-4174-8f6e-4c309fd45341",
+              "parentUUID": "c5f0e381-1bc2-4efd-b61d-e068a043fb46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "read file using read file command",
+              "fullTitle": "read write file demo read file using read file command",
+              "timedOut": null,
+              "duration": 64,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('./cypress/fixtures/example.json')\n    .its('name').should('eq', 'cypress');",
+              "err": {},
+              "uuid": "215a4f30-8da3-4432-bdf3-73109588503d",
+              "parentUUID": "c5f0e381-1bc2-4efd-b61d-e068a043fb46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "write file demo",
+              "fullTitle": "read write file demo write file demo",
+              "timedOut": null,
+              "duration": 59,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.writeFile('./sample.txt', 'Hello I am learning cypress');\ncy.writeFile('./sample.txt', 'This is interesting', { flag: 'a+' });",
+              "err": {},
+              "uuid": "532ac122-ad0a-4a96-bea4-36b6d22c43ef",
+              "parentUUID": "c5f0e381-1bc2-4efd-b61d-e068a043fb46",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c423be3-57a4-4174-8f6e-4c309fd45341",
+            "215a4f30-8da3-4432-bdf3-73109588503d",
+            "532ac122-ad0a-4a96-bea4-36b6d22c43ef"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

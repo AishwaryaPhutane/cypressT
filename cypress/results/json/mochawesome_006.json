@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-07T13:00:22.541Z",
+    "end": "2021-03-07T13:00:23.961Z",
+    "duration": 1420,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e224b56b-c914-4d08-bcb2-c9521c105d01",
+      "title": "",
+      "fullFile": "cypress\\integration\\api\\api_test_1_spec.js",
+      "file": "cypress\\integration\\api\\api_test_1_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7fcff479-d3dd-4570-a900-04080b1ca860",
+          "title": "All API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET 1",
+              "fullTitle": "All API tests GET 1",
+              "timedOut": null,
+              "duration": 1135,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', 'https://reqres.in/api/users?page=2').then(function (response) {\n  expect(response).to.have.property('status', 200);\n  expect(response.status).to.equal(200);\n  expect(response.body).not.to.be[\"null\"];\n  expect(response.body).to.have.property('page', 2);\n  expect(response.body.data).to.have.length(6);\n});",
+              "err": {},
+              "uuid": "e30f9967-1341-4576-9a52-e175c97df1a1",
+              "parentUUID": "7fcff479-d3dd-4570-a900-04080b1ca860",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET 1",
+              "fullTitle": "All API tests GET 1",
+              "timedOut": null,
+              "duration": 231,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', 'https://reqres.in/api/users?page=2').as('user_list');\ncy.get('@user_list').should(function (response) {\n  expect(response).to.have.property('status', 200);\n  expect(response.status).to.equal(200);\n  expect(response.body).not.to.be[\"null\"];\n  expect(response.body).to.have.property('page', 2);\n  expect(response.body.data).to.have.length(6);\n});",
+              "err": {},
+              "uuid": "6fe08770-aca2-46d9-b7d2-a448c6503560",
+              "parentUUID": "7fcff479-d3dd-4570-a900-04080b1ca860",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e30f9967-1341-4576-9a52-e175c97df1a1",
+            "6fe08770-aca2-46d9-b7d2-a448c6503560"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1366,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

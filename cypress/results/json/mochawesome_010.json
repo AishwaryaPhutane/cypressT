@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-07T13:22:51.860Z",
+    "end": "2021-03-07T13:22:57.832Z",
+    "duration": 5972,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6af8e24e-6f79-42b9-b158-db642105935e",
+      "title": "",
+      "fullFile": "cypress\\integration\\fileupload_download.ts",
+      "file": "cypress\\integration\\fileupload_download.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "File upload demo",
+          "fullTitle": "File upload demo",
+          "timedOut": null,
+          "duration": 1444,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\fileupload_download.ts\\\\File upload demo (failed).png\"\n}",
+          "code": "// cy.visit('https://filebin.net/')\n// cy.get('#fileField').attachFile('photo.png');\ncy.visit('http://tinyupload.com/');\ncy.get('[name=\"uploaded_file\"]').attachFile('photo.png');",
+          "err": {
+            "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > ct_registerURLClickHandler is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+            "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > ct_registerURLClickHandler is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at http://tinyupload.com/:45:2",
+            "diff": null
+          },
+          "uuid": "65571331-51fe-452e-83d5-6dc618a8db6f",
+          "parentUUID": "6af8e24e-6f79-42b9-b158-db642105935e",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "file download demo",
+          "fullTitle": "file download demo",
+          "timedOut": null,
+          "duration": 864,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "93616abc-a67f-4aa8-afd1-1426dc769f16",
+          "parentUUID": "6af8e24e-6f79-42b9-b158-db642105935e",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "93616abc-a67f-4aa8-afd1-1426dc769f16"
+      ],
+      "failures": [
+        "65571331-51fe-452e-83d5-6dc618a8db6f"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 2308,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
