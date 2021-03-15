@@ -1,10 +1,6 @@
 {
-  "url": "https://jsonplaceholder.typicode.com/posts/1",
-   "getRequest":"GET",
-   "InvalidURL": "https://jsonppplaceholder.typicode.com/posts/1",
-
-
-   "name" :  "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+   "name": "cypress",
+   "email": "hello@cypress.io",
+   "body": "Fixtures are a great way to mock data for responses to routes",
+   "url" : "https://jsonplaceholder.typicode.com/posts/1"
 }

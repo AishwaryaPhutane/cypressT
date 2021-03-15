@@ -1,7 +1,7 @@
 {
   "name": "cypressdemo11",
   "version": "1.0.0",
-  "description": "",
+ 
   "main": "index.js",
   "scripts": {
     "sayhello": "echo Hello World...",
@@ -23,5 +23,7 @@
   "devDependencies": {
     "cypress-file-upload": "^5.0.2",
     "cypress-mochawesome-reporter": "^1.3.0"
-  }
+  },
+
+  "description" : ""
 }

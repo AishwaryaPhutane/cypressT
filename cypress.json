@@ -1,5 +1,8 @@
 {
-    
+    "experimentalStudio": true,
+    "baseUrl": "https://reqres.in/api/users?page=2",
+    "reporter" : "cypress-mochawesome-reporter",
+    "projectId": "7jqnqv",
     "failOnStatus": false
 
     
