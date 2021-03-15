@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-08T13:45:25.180Z",
+    "end": "2021-03-08T13:45:29.817Z",
+    "duration": 4637,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca7530c0-0caf-49f5-97b0-83b391d78543",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.ts",
+      "file": "cypress\\integration\\login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e20820e-8d66-432f-a4b5-a14fea43afce",
+          "title": "All login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login test - valid creds",
+              "fullTitle": "All login tests login test - valid creds",
+              "timedOut": null,
+              "duration": 620,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//loginPage.loginWithValidCredentials('test', 'test')",
+              "err": {},
+              "uuid": "38af2b49-fc2c-418f-b0af-69a2a31ed6f8",
+              "parentUUID": "1e20820e-8d66-432f-a4b5-a14fea43afce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login test - invalid creds",
+              "fullTitle": "All login tests login test - invalid creds",
+              "timedOut": null,
+              "duration": 467,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//loginPage.loginWithInvalidCredentials('abc','123');",
+              "err": {},
+              "uuid": "7ca3528e-56b5-4b00-b081-50af028c44bc",
+              "parentUUID": "1e20820e-8d66-432f-a4b5-a14fea43afce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "38af2b49-fc2c-418f-b0af-69a2a31ed6f8",
+            "7ca3528e-56b5-4b00-b081-50af028c44bc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1087,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

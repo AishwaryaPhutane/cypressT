@@ -1,7 +1,7 @@
 {
-    "watchForFileChanges" : false,
-    "reporter" : "cypress-mochawesome-reporter",
-    "baseurl" : "https://reqres.in/api"
+    
+    "failOnStatus": false
+
     
 
 }
